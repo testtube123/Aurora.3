@@ -77,6 +77,7 @@
 /obj/item/weapon/gripper/update_icon()
 	underlays.Cut()
 	if (wrapped && wrapped.icon)
+		log_debug("MA: gripper icons.")
 		var/mutable_appearance/MA = new(wrapped)
 		MA.layer = FLOAT_LAYER
 		MA.pixel_y = -8

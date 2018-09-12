@@ -88,7 +88,7 @@
 			if (!tcache)
 				tcache = typecacheof(canSmoothWith || type, FALSE, !(smooth & SMOOTH_MORE))
 				SSicon_smooth.typecachecache[type] = tcache
-		else 
+		else
 			tcache = typecacheof(canSmoothWith || type, FALSE, !(smooth & SMOOTH_MORE))
 
 		if (smooth & SMOOTH_BORDER)
@@ -195,6 +195,7 @@
 	if (smooth_underlays && adjacencies)
 		// This should be a mutable_appearance, but we're still on 510.
 		// Alas.
+		log_debug("MA: diagonal smooth.")
 		var/mutable_appearance/underlay_appearance = new(layer = TURF_LAYER)
 		var/list/U = list(underlay_appearance)
 		if(fixed_underlay)

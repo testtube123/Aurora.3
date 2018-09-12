@@ -17,6 +17,7 @@
 
 // Custom behavior here - we want smoothed turfs to show basalt underneath, not lava.
 /turf/simulated/lava/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
+	log_debug("MA: lava get underlay.")
 	underlay_appearance.icon = 'icons/turf/basalt.dmi'
 	underlay_appearance.icon_state = "basalt"
 	if (prob(20))
@@ -67,6 +68,7 @@
 	footstep_sound = "concretestep"
 
 /turf/simulated/floor/asteroid/basalt/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
+	log_debug("MA: basalt get underlay.")
 	underlay_appearance.icon = icon
 	underlay_appearance.icon_state = "basalt"
 	if (prob(20))

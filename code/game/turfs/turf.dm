@@ -101,6 +101,7 @@
 	return QDEL_HINT_IWILLGC
 
 /turf/proc/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
+	log_debug("MA: turf get underlay.")
 	underlay_appearance.appearance = src
 	underlay_appearance.dir = adjacency_dir
 	return TRUE

@@ -58,6 +58,7 @@
 
 	icon_state = "evidence"
 
+	log_debug("MA: evidence, mousedrop.")
 	var/mutable_appearance/MA = new(I)
 	MA.pixel_x = 0
 	MA.pixel_y = 0

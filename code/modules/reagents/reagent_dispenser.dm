@@ -159,6 +159,7 @@
 
 			rig = W
 			user.drop_from_inventory(W,src)
+			log_debug("MA: fueltank attackby.")
 			var/mutable_appearance/MA = new(W)
 			MA.pixel_x += 1
 			MA.pixel_y += 6

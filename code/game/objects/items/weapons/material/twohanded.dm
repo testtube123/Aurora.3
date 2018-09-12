@@ -244,6 +244,8 @@
 		var/matrix/M = matrix()
 		I.transform = M
 		usr.drop_from_inventory(I,HS)
+
+		log_debug("MA: two-handed spearing.")
 		var/mutable_appearance/MA = new(I)
 		MA.layer = FLOAT_LAYER
 		HS.add_overlay(MA)

@@ -240,6 +240,8 @@
 	I.forceMove(src)
 	current_weight += I.w_class
 	carrying += I
+
+	log_debug("MA: trays.")
 	var/mutable_appearance/MA = new(I)
 	MA.layer = FLOAT_LAYER
 	add_overlay(MA)
